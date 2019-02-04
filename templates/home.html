@@ -27,30 +27,30 @@
             Username:
             <input type="text" name="username">
         </label>
-        <p class="error">That's not a valid username</p>
+        <p class="error">{{usernameerror}}</p>
         <br></br>
         <label>
             Password:
             <input type="password" name="password">
         </label>
-        <p class="error">That's not a valid password</p>
+        <p class="error">{{passworderror}}</p>
         <br></br>
         <label>
             Verify Password:
             <input type="password" name="verifypassword">
         </label>
-        <p class="error">That's not a valid password</p>
+        <p class="error">{{passworderror}}</p>
         <br></br>
         <label>
             Email (optional):
             <input type="text" name="email">
         </label>
-        <p class="error">That's not a valid email</p>
+        <p class="error">{{emailerror}}</p>
         <br></br>
         <input type="submit" value="Submit Query"/>
       </form>
 
-      {% block content %}
-      {% endblock %}
+      <!--{% block content %}
+      {% endblock %}-->
     </body>
 </html>
